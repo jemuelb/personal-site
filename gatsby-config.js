@@ -2,5 +2,8 @@ module.exports = {
   siteMetadata: {
     title: "personal-site",
   },
-  plugins: ["gatsby-plugin-gatsby-cloud"],
+  plugins: [
+      "gatsby-plugin-gatsby-cloud",
+      "gatsby-plugin-emotion",
+  ],
 };

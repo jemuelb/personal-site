@@ -8,6 +8,12 @@
     color: rebeccapurple;
 }
 
+.nav-branding {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
