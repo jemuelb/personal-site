@@ -4,7 +4,7 @@ import {css} from "@emotion/react"
 
 const container = css`
   margin: auto;
-  max-width: 500px;
+  max-width: 600px;
   font-family: sans-serif;
 `
 
