@@ -9,7 +9,7 @@ const PostIndex = ({data}) => {
                 {
                     data.allMdx.nodes.map((node) => (
                         <li>
-                            <Link to={node.slug}>{node.frontmatter.title}</Link>
+                            <Link to={node.frontmatter.slug}>{node.frontmatter.title}</Link>
                         </li>
                     ))
                 }
@@ -27,6 +27,7 @@ export const query = graphql`
                 frontmatter {
                     date(formatString: "MMMM D, YYYY")
                     title
+                    slug
                 }
                 id
                 body
