@@ -22,7 +22,7 @@ export default PostIndex
 
 export const query = graphql`
     query {
-        allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+        allMdx(sort: {fields: frontmatter___date, order: DESC}, filter: {slug: {regex: "/blog/"}}) {
             nodes {
                 frontmatter {
                     date(formatString: "MMMM D, YYYY")
