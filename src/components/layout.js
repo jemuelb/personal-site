@@ -10,7 +10,7 @@ const container = css`
 `
 
 const heading = css`
-  color: darkgoldenrod;
+  color: #b36a5e;
 `
 
 const Layout = ({pageTitle, children}) => {
