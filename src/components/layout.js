@@ -24,18 +24,17 @@ const Layout = ({pageTitle, children}) => {
         }
     `)
     return (
-        <div css={container}>
+        <div>
             <title>{pageTitle} | {data.site.siteMetadata.title}</title>
 
             <Navbar/>
 
-            <main>
+            <main css={container}>
                 <h1 css={heading}>{pageTitle}</h1>
                 {children}
             </main>
 
         </div>
-
     )
 }
 
